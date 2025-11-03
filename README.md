@@ -42,12 +42,19 @@ cp .env.example .env
 
 ## 🔧 Configuração
 
-### Variáveis de Ambiente (server/.env)
+### Variáveis de Ambiente
 
+**Backend (server/.env):**
 ```env
 PORT=3003
 ANTHROPIC_API_KEY=seu_api_key_aqui
 ```
+
+**Frontend (.env.production):**
+```env
+VITE_API_URL=/docai-api
+```
+> Usa proxy Nginx `/docai-api/` que reescreve para `/api/` no backend (porta 3003)
 
 ## 🏃 Execução Local
 
